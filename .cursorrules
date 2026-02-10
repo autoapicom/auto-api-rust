@@ -1,0 +1,27 @@
+# auto-api-rust — Cursor Rules
+
+- Rust edition 2021, deps: reqwest (json), serde, serde_json
+- tokio is dev-dependency only (for examples)
+- Client struct, 6 async methods returning Result<T, Error>
+- Error enum: Auth, Api, Network variants
+- impl From<reqwest::Error> for automatic ? conversion
+- Option<String> for optional params, ..Default::default() pattern
+- serde_json::Value for raw offer data — varies between sources
+- snake_case, pub fields on response structs
+- Rustdoc (///) on every public item, in English
+- All code comments and docs in English
+
+## Key Files
+
+- src/lib.rs — re-exports
+- src/client.rs — Client struct (6 async methods)
+- src/types.rs — all types + OffersParams
+- src/error.rs — Error enum
+- Cargo.toml — manifest
+
+## Never
+
+- Use unwrap() in library code
+- Add tokio as main dependency
+- Use panic! in library code
+- Skip Rustdoc on public items
