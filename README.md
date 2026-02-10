@@ -4,9 +4,9 @@
 [![docs.rs](https://docs.rs/auto-api-client/badge.svg)](https://docs.rs/auto-api-client)
 [![License](https://img.shields.io/github/license/autoapicom/auto-api-rust)](LICENSE)
 
-Rust client for [auto-api.com](https://auto-api.com) — car listings API across multiple marketplaces.
+Async Rust client for the [auto-api.com](https://auto-api.com) car listings API. Built on `reqwest` + `serde`.
 
-One API to access car listings from 8 marketplaces: encar, mobile.de, autoscout24, che168, dongchedi, guazi, dubicars, dubizzle. Search offers, track price changes, and get listing data in a unified format.
+Covers 8 marketplaces: encar, mobile.de, autoscout24, che168, dongchedi, guazi, dubicars, dubizzle. Offer data comes back as `serde_json::Value` since each source has its own schema.
 
 ## Installation
 
@@ -77,7 +77,7 @@ let info = client.get_offer_by_url(
 
 ### Decode offer data
 
-Offer data varies between sources, so it's stored as `serde_json::Value`. Deserialize into `OfferData` or your own struct:
+Since each marketplace returns different fields, offer data is `serde_json::Value`. You can deserialize into `OfferData` or your own struct:
 
 ```rust
 use auto_api_client::OfferData;
