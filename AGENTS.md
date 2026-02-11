@@ -6,7 +6,7 @@ Rust client for [auto-api.com](https://auto-api.com) — car listings API across
 
 ```toml
 [dependencies]
-auto-api-client = "0.1"
+auto-api-client = "1.0"
 ```
 
 ```rust
