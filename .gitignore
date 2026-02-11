@@ -42,6 +42,10 @@ pip-log.txt
 .pytest_cache/
 .ruff_cache/
 
+# Rust
+/target/
+Cargo.lock
+
 # Go
 bin/
 vendor/
