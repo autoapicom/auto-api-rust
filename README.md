@@ -1,8 +1,8 @@
 # auto-api-client-rust
 
 [![Crates.io](https://img.shields.io/crates/v/auto-api-client)](https://crates.io/crates/auto-api-client)
-[![docs.rs](https://docs.rs/auto-api-client/badge.svg)](https://docs.rs/auto-api-client)
-[![License](https://img.shields.io/github/license/autoapicom/auto-api-rust)](LICENSE)
+[![docs.rs](https://img.shields.io/docsrs/auto-api-client)](https://docs.rs/auto-api-client)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 Async Rust client for the [auto-api.com](https://auto-api.com) car listings API. Built on `reqwest` + `serde`.
 
