@@ -20,7 +20,7 @@ impl Client {
     pub fn new(api_key: &str) -> Self {
         Self {
             api_key: api_key.to_string(),
-            base_url: "https://auto-api.com".to_string(),
+            base_url: "https://api1.auto-api.com".to_string(),
             api_version: "v2".to_string(),
             http_client: reqwest::Client::builder()
                 .timeout(Duration::from_secs(30))

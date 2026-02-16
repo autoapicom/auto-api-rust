@@ -1,6 +1,6 @@
 [package]
 name = "auto-api-client"
-version = "1.0.0"
+version = "1.0.2"
 edition = "2021"
 description = "Async client for auto-api.com — car listings from encar, mobile.de, autoscout24 and more"
 license = "MIT"
