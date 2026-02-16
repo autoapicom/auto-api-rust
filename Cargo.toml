@@ -1,6 +1,6 @@
 [package]
 name = "auto-api-client"
-version = "1.0.2"
+version = "1.0.5"
 edition = "2021"
 description = "Async client for auto-api.com — car listings from encar, mobile.de, autoscout24 and more"
 license = "MIT"
@@ -18,3 +18,4 @@ serde_json = "1"
 
 [dev-dependencies]
 tokio = { version = "1", features = ["full"] }
+mockito = "1"
